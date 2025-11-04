@@ -174,7 +174,7 @@ Os scripts desta etapa representam espacialmente os extremos da renda (Q1 e Q5),
 
 ## 🧩 Consideração final
 
-> *Entender as raízes desse processo e cartografar as desigualdades evidencia que nenhum discurso sobre ‘progresso’ se sustenta enquanto persistirem as contradições raciais e fundiárias que engendraram a formação social brasileira.*
+> *Entender as raízes desse processo e cartografar as desigualdades, conforme aqui proposto, evidencia que nenhum discurso sobre “progresso” ou “crescimento” se sustenta de forma legítima enquanto persistirem as contradições raciais e fundiárias que engendraram a formação social brasileira.*
 > **Pedro I. G. Gomes (2025)**
 
 
