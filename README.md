@@ -189,7 +189,7 @@ Universidade Federal do Tocantins. Zenodo. https://doi.org/10.5281/zenodo.175189
 
 ## 🧩 Consideração final
 
-> *Entender as raízes desse processo e cartografar as desigualdades, conforme aqui proposto, evidencia que nenhum discurso sobre “progresso” ou “crescimento” se sustenta de forma legítima enquanto persistirem as contradições raciais e fundiárias que engendraram a formação social brasileira. Assim, o estudo reitera que as cidades médias são, antes de tudo, parte do mesmo tecido estrutural que historicamente condicionou e atuou na formação do território brasileiro, e que segue exigindo ação coletiva e representatividade política para alcançar condições mais justas de existência*
+> *Entender as raízes desse processo e cartografar as desigualdades, conforme aqui proposto, evidencia que nenhum discurso sobre “progresso” ou “crescimento” se sustenta de forma legítima enquanto persistirem as contradições raciais e fundiárias que engendraram a formação social brasileira. Assim, o estudo reitera que as cidades médias são, antes de tudo, parte do mesmo tecido estrutural que historicamente condicionou e atuou na formação do território brasileiro, e que segue exigindo ação coletiva e representatividade política para alcançar condições mais justas de existência.*
 
 > **Pedro I. G. Gomes (2025)**
 
