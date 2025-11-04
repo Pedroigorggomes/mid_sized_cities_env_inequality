@@ -1,5 +1,6 @@
 # 🌎 Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras
 “Base de dados e scripts da dissertação ‘Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras’ (GOMES, 2025).”
+
 **Autor:** Pedro Igor Galvão Gomes  
 **Instituição:** Universidade Federal do Tocantins (UFT)  
 **Ano:** 2025  
