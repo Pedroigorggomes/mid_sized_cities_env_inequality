@@ -1,0 +1,49 @@
+DICIONÁRIO DE DADOS — Setores_Indicadores_Censo_22 (TXT)
+Última atualização: 2025-11-04
+Chave primária do dataset: CD_SETOR (id_setor = cópia usada para joins internos)
+
+CAMPO         | TIPO     | UNIDADE         | DESCRIÇÃO
+------------- | -------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------
+FID           | inteiro  | –               | Identificador interno de feição gerado pelo software SIG. Não usar como chave.
+Shape         | geom     | –               | Tipo de geometria (normalmente Polygon). Em GeoPandas a coluna padrão é "geometry".
+CD_SETOR      | string   | –               | Código do setor censitário 2022 (IBGE, 15 dígitos). Chave primária.
+SITUACAO      | string   | –               | Situação do setor (ex.: Urbana, Rural). Texto correspondente ao código CD_SIT.
+CD_SIT        | inteiro  | –               | Código da situação do setor. 1 = Urbana (alta dens.), 2 = Urbana (baixa dens.), 3 = Rural. Demais conforme dicionário IBGE.
+CD_TIPO       | inteiro  | –               | Tipo de setor. 0 = setor normal; demais valores indicam setores especiais (ex.: aldeia, quartel, etc.).
+AREA_KM2      | float    | km²             | Área do polígono do setor em quilômetros quadrados (pode variar com o CRS).
+CD_REGIAO     | inteiro  | –               | Código da macrorregião (1–5).
+NM_REGIAO     | string   | –               | Nome da macrorregião (Norte, Nordeste, Sudeste, Sul, Centro-Oeste).
+CD_UF         | inteiro  | –               | Código da Unidade da Federação (2 dígitos IBGE).
+NM_UF         | string   | –               | Nome da Unidade da Federação.
+CD_MUN        | inteiro  | –               | Código do Município (7 dígitos IBGE).
+NM_MUN        | string   | –               | Nome do Município.
+CD_DIST       | inteiro  | –               | Código do Distrito (quando existente).
+NM_DIST       | string   | –               | Nome do Distrito (quando existente).
+CD_SUBDIST    | inteiro  | –               | Código do Subdistrito (quando existente).
+NM_SUBDIST    | string   | –               | Nome do Subdistrito (quando existente).
+CD_BAIRRO     | inteiro  | –               | Código do Bairro (quando disponível; cobertura parcial).
+NM_BAIRRO     | string   | –               | Nome do Bairro (quando disponível).
+v0001         | inteiro  | pessoas         | Total de pessoas residentes no setor (IBGE, demografia 2022). Denominador dos % por raça.
+v0002         | inteiro  | domicílios      | Total de domicílios = DPPO + DPPV + DPPUO + DPIO + DCCM + DCSM.
+v0003         | inteiro  | domicílios      | Total de domicílios particulares = DPPO + DPPV + DPPUO + DPIO.
+v0004         | inteiro  | domicílios      | Total de domicílios coletivos = DCCM + DCSM.
+v0005         | float    | pessoas/domic.  | Média de moradores em Domicílios Particulares Ocupados = (Total de pessoas em DPO) / (DPPO + DPIO).
+v0006         | float    | %               | Percentual de Domicílios Particulares Ocupados imputados = 100 × (Total de DPO imputados / Total de DPO). Faixa 0–100.
+v0007         | inteiro  | domicílios      | Total de Domicílios Particulares Ocupados (DPPO + DPIO). Denominador de P_Agua, P_Esgo, P_Lixo.
+Brancos       | inteiro  | pessoas         | Pessoas autodeclaradas brancas (V01317). Contagem.
+Pretos        | inteiro  | pessoas         | Pessoas autodeclaradas pretas (V01318). Contagem.
+Amarelos      | inteiro  | pessoas         | Pessoas autodeclaradas amarelas (V01319). Contagem.
+Pardos        | inteiro  | pessoas         | Pessoas autodeclaradas pardas (V01320). Contagem.
+Indigena      | inteiro  | pessoas         | Pessoas autodeclaradas indígenas (V01321). Contagem.
+V01322        | inteiro  | pessoas         | Cor/raça não declarada/ignorados (V01322). Contagem.
+P_Branca      | float    | %               | Pessoas brancas (%) = 100 × V01317 / v0001.
+P_Preta       | float    | %               | Pessoas pretas (%)  = 100 × V01318 / v0001.
+P_Amarela     | float    | %               | Pessoas amarelas (%) = 100 × V01319 / v0001.
+P_Parda       | float    | %               | Pessoas pardas (%)  = 100 × V01320 / v0001.
+P_Indigena    | float    | %               | Pessoas indígenas (%) = 100 × V01321 / v0001.
+P_Agua        | float    | %               | Domicílios com rede geral de água (%) = 100 × V00111 / v0007.
+P_Esgo        | float    | %               | Domicílios com esgoto via rede geral/pluvial (%) = 100 × (V00309 + V00310) / v0007 (fallback: só V00309 se V00310 ausente).
+P_Lixo        | float    | %               | Domicílios com lixo coletado por serviço de limpeza (%) = 100 × V00397 / v0007.
+TX_Alf_15     | float    | %               | Taxa de alfabetização da população de 15 anos ou mais (0–100). Fonte: IBGE.
+id_setor      | string   | –               | Cópia de CD_SETOR para joins internos (1:1 com CD_SETOR).
+RpC_2010      | float    | R$/hab          | Renda domiciliar per capita (2010) harmonizada para a malha 2022 por ponderação de área (overlay 2010×2022, Brazil Albers). Script 02.
