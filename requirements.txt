@@ -1,0 +1,8 @@
+```bash
+python >= 3.10
+geopandas >= 0.14
+pandas >= 2.0
+numpy >= 1.26
+matplotlib >= 3.8
+shapely >= 2.0
+networkx >= 3.2
