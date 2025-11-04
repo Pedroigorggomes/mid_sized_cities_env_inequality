@@ -75,8 +75,9 @@ Nesses casos, o algoritmo excluiu **todas as manchas envolvidas na conurbação*
 Da mesma forma, quando duas manchas estavam conectadas mas **uma delas possuía população inferior a 100 mil habitantes**, essa mancha menor foi **eliminada**.  
 O objetivo foi preservar apenas manchas urbanas cuja dinâmica socioespacial correspondesse efetivamente a núcleos urbanos médios e autônomos, sem dependência metropolitana, conforme a figura abaixo.
 
-Aplicação dos critérios de seleção para cidades médias
+Figura: Aplicação dos critérios de seleção para cidades médias
 <img width="941" height="908" alt="image" src="https://github.com/user-attachments/assets/f17ea725-3d6c-47ec-8182-d49262a96694" />
+
 Fonte: Autor (2025).
 
 ---
@@ -116,4 +117,5 @@ Fonte: Autor (2025).
 **Citação sugerida:**
 > GOMES, Pedro Igor Galvão. *Metodologia de definição das 92 cidades médias brasileiras.* Palmas: Universidade Federal do Tocantins, 2025.  
 > Disponível em: [https://github.com/pedroigorggomes/mid_sized_cities_env_inequality/docs/README_cities.md](https://github.com/pedroigorggomes/mid_sized_cities_env_inequality/docs/README_cities.md)
+
 
