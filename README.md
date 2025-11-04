@@ -172,9 +172,21 @@ Os scripts desta etapa representam espacialmente os extremos da renda (Q1 e Q5),
 
 ---
 
+## 📚 Citação sugerida
+
+Se este repositório for utilizado total ou parcialmente em análises, publicações ou atividades acadêmicas, cite da seguinte forma:
+
+🔹 Formato ABNT:
+GOMES, Pedro Igor Galvão. mid_sized_cities_env_inequality: Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras.
+Palmas: Universidade Federal do Tocantins, 2025. Dataset e scripts. DOI: 10.5281/zenodo.17518966
+🔹 Formato APA:
+Gomes, P. I. G. (2025). mid_sized_cities_env_inequality: Race, Income, and Environmental (In)Justice in Brazilian Mid-Sized Cities [Data set & scripts].
+Universidade Federal do Tocantins. Zenodo. https://doi.org/10.5281/zenodo.17518966
+
 ## 🧩 Consideração final
 
 > *Entender as raízes desse processo e cartografar as desigualdades, conforme aqui proposto, evidencia que nenhum discurso sobre “progresso” ou “crescimento” se sustenta de forma legítima enquanto persistirem as contradições raciais e fundiárias que engendraram a formação social brasileira.*
+
 > **Pedro I. G. Gomes (2025)**
 
 
