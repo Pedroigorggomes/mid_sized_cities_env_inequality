@@ -6,7 +6,7 @@
 **Instituição:** Universidade Federal do Tocantins (UFT)  
 **Ano:** 2025  
 **Licença:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
-*DOI:* 10.5281/zenodo.17518966
+**DOI:** 10.5281/zenodo.17518966
 ---
 
 ## 🧭 Descrição geral
