@@ -1,4 +1,7 @@
 # 🌎 Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras
+
+DOI: 10.5281/zenodo.17518966
+
 “Base de dados e scripts da dissertação ‘Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras’ (GOMES, 2025).”
 
 **Autor:** Pedro Igor Galvão Gomes  
