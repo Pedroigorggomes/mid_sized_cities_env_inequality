@@ -149,3 +149,6 @@ Principais bibliotecas:
 
 “Entender as raízes desse processo e cartografar as desigualdades evidencia que nenhum discurso sobre ‘progresso’ se sustenta enquanto persistirem as contradições raciais e fundiárias que engendraram a formação social brasileira.”
 Pedro I. G. Gomes (2025)
+
+<img width="1589" height="985" alt="All_Races_Correlation" src="https://github.com/user-attachments/assets/ee8d6147-f350-4458-b3b1-8ac716c5010c" />
+
