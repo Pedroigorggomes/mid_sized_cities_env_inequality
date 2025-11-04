@@ -97,6 +97,7 @@ Os scripts desta etapa produzem gráficos e indicadores de desigualdade racial, 
 O script `04_plot_correlation_national.py` gera os gráficos de dispersão entre `RpC_2010` e as proporções raciais (%), aplicando o coeficiente de **Pearson (r)** para o conjunto das 92 cidades.
 
 <img width="1382" height="860" alt="image" src="https://github.com/user-attachments/assets/1eff1b00-aa3c-4912-8a75-815192faf989" />
+
 > **Fonte:** Autor (2025).
 > **Interpretação:** observa-se correlação positiva entre renda e população branca (r = 0,46) e correlações negativas entre renda e populações preta (r = -0,32) e parda (r = -0,44).
 
@@ -107,10 +108,12 @@ O script `04_plot_correlation_national.py` gera os gráficos de dispersão entre
 O script `06_plot_access_infrastructure_quintile.py` estratifica os setores por **quintis de renda** (Q1 = 20% mais pobres; Q5 = 20% mais ricos) e calcula indicadores por grupo racial e infraestrutura.
 
 <img width="949" height="791" alt="image" src="https://github.com/user-attachments/assets/525bc892-6608-470a-a20d-8940289e6033" />
+
 > **Fonte:** Autor (2025).
 > A estratificação permite comparar perfis sociais e raciais entre faixas de renda, revelando padrões de segregação intraurbana.
 
 <img width="933" height="1113" alt="image" src="https://github.com/user-attachments/assets/efde2566-9435-49ea-b1f5-48221edb66fd" />
+
 > **Fonte:** Autor (2025).
 
 
@@ -124,6 +127,7 @@ O mesmo script gera gráficos agregados por região, mostrando a variação da c
 
 
 <img width="803" height="857" alt="image" src="https://github.com/user-attachments/assets/69a33ba5-8944-4b4d-84de-de1492730233" />
+
 > **Fonte:** Autor (2025).
 > A figura ilustra a leitura da **linha de equidade** — representação teórica de igualdade na distribuição racial por renda.
 > **Resultado:** observa-se que os quintis superiores concentram as populações brancas e o maior acesso a serviços urbanos.
@@ -138,6 +142,7 @@ O script `07_plot_discrepancy_by_region.py` calcula a diferença entre a popula�
 
 
 <img width="1036" height="628" alt="image" src="https://github.com/user-attachments/assets/e4e0ddc3-3eae-4d30-bdad-8cfd570e76f1" />
+
 > **Fonte:** Autor (2025).
 > **Interpretação:** nas regiões Norte e Nordeste, observa-se sub-representação de brancos nos quintis superiores e sobrerrepresentação de pretos e pardos nos inferiores.
 
@@ -151,6 +156,7 @@ Os scripts desta etapa representam espacialmente os extremos da renda (Q1 e Q5),
 * `10_plot_income_maps_grouped_by_region.py` – plota os mapas comparativos por região.
 
 <img width="1276" height="842" alt="image" src="https://github.com/user-attachments/assets/9531fb91-fc7f-4703-90bc-2f43d76b25b0" />
+
 > **Fonte:** Autor (2025).
 > Os mapas revelam padrões de **segregação morfológica** e **contrastes socioespaciais** que reforçam hierarquias raciais e fundiárias no espaço urbano.
 
