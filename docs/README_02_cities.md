@@ -73,18 +73,11 @@ Durante a agregação espacial, alguns municípios com manchas urbanas contígua
 Nesses casos, o algoritmo excluiu **todas as manchas envolvidas na conurbação**, uma vez que elas não poderiam ser tratadas individualmente como cidades médias.  
 
 Da mesma forma, quando duas manchas estavam conectadas mas **uma delas possuía população inferior a 100 mil habitantes**, essa mancha menor foi **eliminada**.  
-O objetivo foi preservar apenas manchas urbanas cuja dinâmica socioespacial correspondesse efetivamente a núcleos urbanos médios e autônomos, sem dependência metropolitana.
+O objetivo foi preservar apenas manchas urbanas cuja dinâmica socioespacial correspondesse efetivamente a núcleos urbanos médios e autônomos, sem dependência metropolitana, conforme a figura abaixo.
 
----
-
-## 🧩 Etapa 5 – Filtragem e revisão manual
-
-Após a aplicação automática dos filtros, foi realizada uma **revisão manual** para identificar casos residuais, como:
-- municípios com população urbana inferior a 100 mil habitantes após o recorte;
-- pequenas conurbações regionais não identificadas pela análise topológica;
-- cidades duplicadas por sobreposição de limites administrativos.
-
-Esses casos foram listados e removidos manualmente, resultando na **versão final consolidada** (`Cidades_Medias_Variaveis_atualizado_v2.shp`).
+Aplicação dos critérios de seleção para cidades médias
+<img width="941" height="908" alt="image" src="https://github.com/user-attachments/assets/f17ea725-3d6c-47ec-8182-d49262a96694" />
+Fonte: Autor (2025).
 
 ---
 
@@ -123,3 +116,4 @@ Esses casos foram listados e removidos manualmente, resultando na **versão fina
 **Citação sugerida:**
 > GOMES, Pedro Igor Galvão. *Metodologia de definição das 92 cidades médias brasileiras.* Palmas: Universidade Federal do Tocantins, 2025.  
 > Disponível em: [https://github.com/pedroigorggomes/mid_sized_cities_env_inequality/docs/README_cities.md](https://github.com/pedroigorggomes/mid_sized_cities_env_inequality/docs/README_cities.md)
+
