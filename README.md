@@ -3,26 +3,25 @@
 # 🌎 Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras
 
 **Autor:** Pedro Igor Galvão Gomes  
-**Orientadora:** Profa. Dra. Lucimara Albieri de Oliveira  
-**Programa:** Pós-Graduação em Ciências do Ambiente (PPGCiamb) – Universidade Federal do Tocantins  
+**Instituição:** Universidade Federal do Tocantins (UFT)  
 **Ano:** 2025  
-**Licença:** [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)  
-**DOI:** _[aguardando integração Zenodo]_  
+**Licença:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 
 ---
 
-## 🧬 Descrição geral
+## 🧭 Descrição geral
 
-Este repositório reúne a **base de dados e os scripts analíticos** desenvolvidos para a dissertação *“Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras”* (GOMES, 2025).
+Este repositório reúne a **base de dados e os scripts analíticos** desenvolvidos para a dissertação *“Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras”* (GOMES, 2025).  
 
-O objetivo é disponibilizar, de forma aberta e reprodutível, as **etapas de tratamento, análise e mapeamento** utilizadas para mensurar desigualdades socioambientais no contexto das cidades médias (100–500 mil habitantes).
+O objetivo é disponibilizar, de forma aberta e reprodutível, as **etapas de tratamento, análise e mapeamento** utilizadas para mensurar desigualdades socioambientais no contexto das cidades médias (100–500 mil habitantes).  
 
 A base de dados foi consolidada em um **único arquivo GeoPackage (`.gpkg`)**, a fim de reduzir o tamanho e simplificar a distribuição — substituindo os múltiplos shapefiles utilizados no processamento original.
 
 ---
 
-## 🗂️ Estrutura do repositório
+## 📁 Estrutura do repositório
 
+```
 mid_sized_cities_env_inequality/
 │
 ├── data/
@@ -53,51 +52,50 @@ mid_sized_cities_env_inequality/
     └── 03_mapping/
         ├── 09_select_quintiles_q1_q5.py
         └── 10_plot_income_maps_grouped_by_region.py
+```
+
 ---
 
 ## 🧩 Organização lógica dos conteúdos
 
 ### **1️⃣ Pasta `/data/`**
-
-Contém os **arquivos de dados prontos para uso** e o **dicionário de variáveis**.
+Contém os **arquivos de dados prontos para uso** e o **dicionário de variáveis**.  
 O arquivo principal é o **`mid_sized_cities_inequality_data_2022.gpkg`**, que reúne:
+- setores censitários urbanos das **92 cidades médias** (Censo 2022);
+- variáveis socioeconômicas e raciais harmonizadas com o Censo 2010;
+- indicadores de infraestrutura (água, esgoto e coleta de lixo).
 
-* setores censitários urbanos das **92 cidades médias** (Censo 2022);
-* variáveis socioeconômicas e raciais harmonizadas com o Censo 2010;
-* indicadores de infraestrutura (agua, esgoto e coleta de lixo).
-
-> 💡 O formato `.gpkg` (GeoPackage) substitui o arquivo shapefile, preservando a geometria e metadados em um único arquivo leve.
+> 💡 O formato `.gpkg` (GeoPackage) substitui dezenas de shapefiles, preservando a geometria e metadados em um único arquivo leve.  
 > Caso o usuário deseje gerar shapefiles, basta exportar via QGIS, GeoPandas ou ogr2ogr.
 
 ---
 
 ### **2️⃣ Pasta `/docs/`**
-
 Reúne a documentação metodológica em quatro etapas:
 
-| Arquivo                             | Conteúdo                                                                                   |
-| ----------------------------------- | ------------------------------------------------------------------------------------------ |
-| `README_01_variables.md`            | Construção dos indicadores censitários (variáveis e fórmulas).                             |
-| `README_02_cities.md`               | Definição das 92 cidades médias (manchas urbanas, contiguidade e critérios populacionais). |
-| `README_03_analysis_methodology.md` | Descrição das métricas de desigualdade e dos scripts de análise.                           |
-| `README_04_Mapping.md`              | Procedimentos de geração dos mapas e identificação dos quintis (Q1 e Q5).                  |
+| Arquivo | Conteúdo |
+|----------|-----------|
+| `README_01_variables.md` | Construção dos indicadores censitários (variáveis e fórmulas). |
+| `README_02_cities.md` | Definição das 92 cidades médias (manchas urbanas, contiguidade e critérios populacionais). |
+| `README_03_analysis_methodology.md` | Descrição das métricas de desigualdade e dos scripts de análise. |
+| `README_04_Mapping.md` | Procedimentos de geração dos mapas e identificação dos quintis (Q1 e Q5). |
 
 Cada documento corresponde a uma **etapa da pipeline** descrita na dissertação e pode ser lido independentemente.
 
 ---
 
 ### **3️⃣ Pasta `/pipelines/`**
-
 Contém os **scripts Python** que implementam o fluxo completo de tratamento, análise e visualização.
 
 Os scripts estão divididos em **três módulos funcionais**:
 
-| Módulo            | Descrição                                                                                                    | Observação                                                                                        |
-| ----------------- | ------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
-| **01_build_base** | Geração dos indicadores, harmonização da renda (2010→2022) e seleção das cidades médias.                     | O produto final dessa etapa já está disponível no `.gpkg`; não é necessário executá-la novamente. |
-| **02_analysis**   | Aplicação das métricas e geração dos gráficos de correlação, discrepância e participação por raça e quintil. | Scripts independentes — podem ser executados a partir do arquivo `.gpkg`.                         |
-| **03_mapping**    | Seleção dos quintis extremos (Q1 e Q5) e plotagem dos mapas regionais de renda e desigualdade.               | Requer arquivos adicionais do IBGE (massas d’água e oceanos), indicados no README_04.             |
+| Módulo | Descrição | Observação |
+|--------|------------|-------------|
+| **01_build_base** | Geração dos indicadores, harmonização da renda (2010→2022) e seleção das cidades médias. | O produto final dessa etapa já está disponível no `.gpkg`; não é necessário executá-la novamente. |
+| **02_analysis** | Aplicação das métricas e geração dos gráficos de correlação, discrepância e participação por raça e quintil. | Scripts independentes — podem ser executados a partir do arquivo `.gpkg`. |
+| **03_mapping** | Seleção dos quintis extremos (Q1 e Q5) e plotagem dos mapas regionais de renda e desigualdade. | Requer arquivos adicionais do IBGE (massas d’água e oceanos), indicados no README_04. |
 
+> ⚠️ **Importante:** os caminhos originais (`G:\Meu Drive\Dissertacao\...`) devem ser substituídos por caminhos locais do usuário.  
 > Nenhum script é automaticamente vinculado aos dados do repositório — todos requerem **ajuste manual dos diretórios de entrada e saída**.
 
 ---
@@ -105,20 +103,17 @@ Os scripts estão divididos em **três módulos funcionais**:
 ## 🚀 Fluxo sugerido de reprodução
 
 1. **Baixar ou clonar** o repositório:
-
    ```bash
    git clone https://github.com/pedroigorggomes/mid_sized_cities_env_inequality.git
    ```
 2. **Abrir no VS Code ou JupyterLab**.
 3. **Usar como base principal** o arquivo:
-
    ```
    data/mid_sized_cities_inequality_data_2022.gpkg
    ```
 4. Executar:
-
-   * Scripts do diretório `02_analysis` → gera gráficos (.png);
-   * Scripts do diretório `03_mapping` → gera mapas (.png).
+   - Scripts do diretório `02_analysis` → gera gráficos (.png);
+   - Scripts do diretório `03_mapping` → gera mapas (.png).
 
 > Os scripts do diretório `01_build_base` servem apenas como **registro metodológico** do processamento original, descrito nas dissertações e READMEs correspondentes.
 
@@ -127,30 +122,30 @@ Os scripts estão divididos em **três módulos funcionais**:
 ## ⚙️ Dependências
 
 Instale o ambiente mínimo de execução:
-
 ```bash
 pip install -r requirements.txt
 ```
 
 Principais bibliotecas:
-
-* `geopandas`, `pandas`, `matplotlib`, `numpy`
-* `shapely`, `networkx`
-* `seaborn` (opcional para gráficos)
-
----
-
-## 🧼 Guia rápido de uso
-
-* Para **visualizar os gráficos e correlações**: execute os scripts em `pipelines/02_analysis/`.
-* Para **gerar mapas dos quintis de renda (Q1 e Q5)**: execute `09_select_quintiles_q1_q5.py` seguido de `10_plot_income_maps_grouped_by_region.py`.
-* Para **consultar a metodologia completa**: leia os READMEs em `docs/`.
+- `geopandas`, `pandas`, `matplotlib`, `numpy`
+- `shapely`, `networkx`
+- `seaborn` (opcional para gráficos)
 
 ---
 
-## 🗒️ Citação sugerida
+## 🧭 Limitações e observações técnicas
 
-> GOMES, Pedro Igor Galvão. *Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras.* Dissertação (Mestrado em Ciências do Ambiente) — Universidade Federal do Tocantins, 2025.
+- Os shapefiles originais do **IBGE** (malhas setoriais, oceanos e massas d’água) **não estão incluídos** no repositório por questões de tamanho e licença.  
+  - Devem ser obtidos diretamente do site do IBGE (2022) e inseridos nos diretórios indicados nos scripts de mapeamento.  
+- O arquivo `.gpkg` contém todos os atributos e geometrias necessárias para replicar as análises.  
+- As métricas podem variar ligeiramente em função de arredondamentos e projeções locais.  
+- Recomenda-se manter o CRS **SIRGAS 2000 / UTM 22S (EPSG:31982)** em todas as operações espaciais.  
+
+---
+
+## 🧾 Citação sugerida
+
+> GOMES, Pedro Igor Galvão. *Raça, Renda e (In)Justiça Ambiental nas Cidades Médias Brasileiras.* Dissertação (Mestrado em Ciências do Ambiente) — Universidade Federal do Tocantins, 2025.  
 > Repositório de dados e scripts: [https://github.com/pedroigorggomes/mid_sized_cities_env_inequality](https://github.com/pedroigorggomes/mid_sized_cities_env_inequality)
 
 
